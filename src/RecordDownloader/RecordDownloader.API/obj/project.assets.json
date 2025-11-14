@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aaronhausheer/RiderProjects/record-downloader/src/RecordDownloader/RecordDownloader/RecordDownloader.csproj",
-      "projectName": "RecordDownloader",
-      "projectPath": "/Users/aaronhausheer/RiderProjects/record-downloader/src/RecordDownloader/RecordDownloader/RecordDownloader.csproj",
+      "projectUniqueName": "/Users/aaronhausheer/RiderProjects/record-downloader/src/RecordDownloader/RecordDownloader.API/RecordDownloader.API.csproj",
+      "projectName": "RecordDownloader.API",
+      "projectPath": "/Users/aaronhausheer/RiderProjects/record-downloader/src/RecordDownloader/RecordDownloader.API/RecordDownloader.API.csproj",
       "packagesPath": "/Users/aaronhausheer/.nuget/packages/",
-      "outputPath": "/Users/aaronhausheer/RiderProjects/record-downloader/src/RecordDownloader/RecordDownloader/obj/",
+      "outputPath": "/Users/aaronhausheer/RiderProjects/record-downloader/src/RecordDownloader/RecordDownloader.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/aaronhausheer/.nuget/NuGet/NuGet.Config"
