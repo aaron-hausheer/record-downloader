@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownloader.API", "RecordDownloader.API\RecordDownloader.API.csproj", "{0789CFE8-2DE3-48FF-A9B6-C69D7FB0D5C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownloader.Web", "RecordDownloader.Web\RecordDownloader.Web.csproj", "{16A05864-1AD2-43B4-9051-B6E2417E617E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownload.Shared", "RecordDownload.Shared\RecordDownload.Shared.csproj", "{E8DF0662-EB12-4157-B083-485B2A15A485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0789CFE8-2DE3-48FF-A9B6-C69D7FB0D5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0789CFE8-2DE3-48FF-A9B6-C69D7FB0D5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0789CFE8-2DE3-48FF-A9B6-C69D7FB0D5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0789CFE8-2DE3-48FF-A9B6-C69D7FB0D5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A05864-1AD2-43B4-9051-B6E2417E617E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A05864-1AD2-43B4-9051-B6E2417E617E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A05864-1AD2-43B4-9051-B6E2417E617E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A05864-1AD2-43B4-9051-B6E2417E617E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8DF0662-EB12-4157-B083-485B2A15A485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8DF0662-EB12-4157-B083-485B2A15A485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8DF0662-EB12-4157-B083-485B2A15A485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8DF0662-EB12-4157-B083-485B2A15A485}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
