@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/RecordDownloader.Web.props" />
+</Project>

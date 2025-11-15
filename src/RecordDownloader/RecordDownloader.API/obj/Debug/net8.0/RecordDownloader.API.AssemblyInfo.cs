@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecordDownloader.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1219e41dc420d8b2c06e10b4cd13b231df06db23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dc83e468c0d6956dd9e5982b8497f7618b90d3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecordDownloader.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecordDownloader.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
