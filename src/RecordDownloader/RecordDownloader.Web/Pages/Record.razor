@@ -1,5 +1,93 @@
-<h3>Record</h3>
+@page "/records"
+@using RecordDownloader.Web.DTOs
+@inject RecordDownloader.Web.Services.IRecordApiClient RecordApiClient
+
+<h3>Records</h3>
+
+<EditForm OnValidSubmit="OnUpload">
+    <InputFile OnChange="OnFileSelected" />
+    <br />
+    <InputTextArea @bind-Value="TextContent" placeholder="Text content" />
+    <br />
+    <button type="submit">Upload</button>
+</EditForm>
+
+@if (IsLoading)
+{
+    <p>Loading...</p>
+}
+else if (Records != null && Records.Count > 0)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Filename</th>
+                <th>Text</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var record in Records)
+        {
+            <tr>
+                <td>@record.Filename</td>
+                <td>@record.TextContent</td>
+                <td>
+                    <button @onclick="() => OnDelete(record.Id)">Delete</button>
+                    <a href="@($"api/records/{record.Id}/file")" target="_blank">Download</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No records.</p>
+}
 
 @code {
-    
+    private List<RecordDto> Records = new List<RecordDto>();
+    private bool IsLoading = true;
+    private Microsoft.AspNetCore.Components.Forms.IBrowserFile SelectedFile;
+    private string TextContent;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadRecords();
+    }
+
+    private async Task LoadRecords()
+    {
+        IsLoading = true;
+        Records = await RecordApiClient.GetRecordsAsync();
+        IsLoading = false;
+    }
+
+    private void OnFileSelected(InputFileChangeEventArgs e)
+    {
+        if (e.FileCount > 0)
+        {
+            SelectedFile = e.File;
+        }
+    }
+
+    private async Task OnUpload()
+    {
+        if (SelectedFile == null)
+        {
+            return;
+        }
+
+        await RecordApiClient.UploadRecordAsync(SelectedFile, TextContent);
+        SelectedFile = null;
+        TextContent = string.Empty;
+        await LoadRecords();
+    }
+
+    private async Task OnDelete(Guid id)
+    {
+        await RecordApiClient.DeleteRecordAsync(id);
+        await LoadRecords();
+    }
 }

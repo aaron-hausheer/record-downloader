@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownloader.API", "Rec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownloader.Web", "RecordDownloader.Web\RecordDownloader.Web.csproj", "{16A05864-1AD2-43B4-9051-B6E2417E617E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownload.Shared", "RecordDownload.Shared\RecordDownload.Shared.csproj", "{E8DF0662-EB12-4157-B083-485B2A15A485}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDownloader.Shared", "RecordDownloader.Shared\RecordDownloader.Shared.csproj", "{E8DF0662-EB12-4157-B083-485B2A15A485}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
